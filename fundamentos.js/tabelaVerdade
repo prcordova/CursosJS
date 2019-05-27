@@ -1,0 +1,21 @@
+//(E) para ser TRUE , precisa que todos operandos sejam verdadeiros( caso contrario o resultado será false)
+v e v => v
+v e f => f
+f e ? => f
+
+//(OR) preciso que pelo menos um resultado seja verdadeiro para ser true.
+v ou ? => v
+f ou v => v 
+f ou f => f
+
+//XOR (Exclusive OR ) exclusivamente precisa de apenas 1 operando sendo verdadeiro ( se tiver mais que um, o resultado será false)
+v xor v => f
+v xor f => v
+f xor v => v
+f xor f => f
+
+//negação (!) inverte o valor do operando ( é um operador unario)
+!v => f
+!f => v
+
+
