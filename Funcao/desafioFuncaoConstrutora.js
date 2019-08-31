@@ -8,3 +8,4 @@ function Pessoa(nome) {
     }
     const p1 = new Pessoa('joao')
     p1.falar()
+    
