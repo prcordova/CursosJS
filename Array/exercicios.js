@@ -662,7 +662,45 @@ function filtrarPorQuantidadeDeDigitos(numeros, quantidadeDesejada) {
 
     
 
+
+
+ function segundoMaior(numeros) {
+     const maiorNumero = Math.max(...numeros)
+     numeros = numeros.filter(numero => numero != maiorNumero)
+     const segundoMaior = Math.max(...numeros)
+
+     return segundoMaior.toFixed(2)
+ }
+
+ console.log(segundoMaior([1,2,33,5,102]))
     */
 
+ /* 
+ 
+        29     Elabore uma função que recebe um objeto com estudantes e suas notas. As notas de cada estudante estarão num
+array, conforme exemplo abaixo. Você deverá calcular a média da nota de cada aluno e retornar um objeto com 
+ 
+ */
 
+/* 
+const soma = array => array.reduce((acumulador, atual) => acumulador +atual, 0)
+const media = array => soma (array) /array.lenght
+
+function receberMelhorEstudante(estudantes) {
+    const estudantesComMedias = Object.defineProperties(estudantes).map( estudante => {
+        const chave = 0,
+        valor = 1
+
+        return {nome: estudante[chave], media: media(estudante[valor]) }
+    })
+
+    const estudantesOrdenados = estudantesComMedias.sort( (estudanteA, estudanteB) => estudanteB.media - estudanteA.media )
+    const melhorEstudante = estudantesOrdenados[0]
     
+    return melhorEstudante
+}
+
+
+console.log(receberMelhorEstudante(batata,2))
+
+ */
