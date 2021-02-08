@@ -10,3 +10,10 @@ console.log(clone)
 const grupoA = ['Joao', 'Pedro', 'Gloria']
 const grupoFinal = ['Maria', 'Rafaela', ...grupoA]
 console.log(grupoFinal)
+
+
+/*  123098
+ 
+
+
+*/
