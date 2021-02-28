@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicios HTML</title>
+
+    <style>
+        #conteudo {
+            padding: 30px 0px ;
+
+        }
+     
+    </style>
+
 </head>
+
 
 <body>
     <header>
@@ -14,14 +24,24 @@
     </header>
     <nav>
         <a href wn-nav="exercicios/teste.html"> 00 - Teste</a> |
-        <a href wn-nav="exercicios/temp.html"> 00 - TEMPPPP</a>
+        <a href wn-nav="exercicios/texto1.html"> 01 - Texto1</a> |
+        <a href wn-nav="exercicios/texto2.html"> 02 - Texto</a> |
+        <a href wn-nav="exercicios/listas.html"> 03 - Listas</a> |
+        <a href wn-nav="exercicios/listaAninhada.html"> 04 - Lista Aninhada</a> |
+        <a href wn-nav="exercicios/links.html"> 05 - Links </a> |
+        <a href wn-nav="exercicios/tabela.html"> 06 - Tabelas </a> |
+        <a href wn-nav="exercicios/form/form.html"> 07 - formulário </a> |
+        <a href wn-nav="/img/imagens.html"> 08 - Imagens </a> |
+        <a href wn-nav="/videos/video.html"> 09 - Video </a> |
     </nav>
     <section id="conteudo"></section>
+
     <footer>
-        <br>
-        Curso de Web Moderno
+            Curso de Web Moderno
     </footer>
+  
     <script>
+        
         document.querySelectorAll('[wn-nav]').forEach(link => {
             const conteudo = document.getElementById('conteudo')
             link.onclick = function(e) {
@@ -33,6 +53,7 @@
             }
         })
     </script>
+
 
 </body>
 
